@@ -34,6 +34,7 @@ func PostProductHandler(w http.ResponseWriter, r *http.Request) {
 	CheckError(err)
 	product.CreatedAt = time.Now()
 	product.ID = id
+	id = id + 1
 	productStore[strconv.Itoa(id)] = product
 
 	data, err := json.Marshal(product)
