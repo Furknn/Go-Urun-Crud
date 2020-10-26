@@ -1,12 +1,14 @@
-## Go-Urun-Crud
+# Go-Urun-Crud
 
-# Post- Get
+## Post- Get
+
 localhost:8080/api/products
 
-# Get - Put - Delete
+## Get - Put - Delete
+
 localhost:8080/api/products/{id}
 
-#Post Body Example
+## Post Body Example
 
 {
     "name": "Armut",
