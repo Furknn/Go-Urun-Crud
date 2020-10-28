@@ -10,6 +10,7 @@ import (
 func main() {
 
 	log.Printf("Server is started ")
+	defer log.Printf("Server is stopped ")
 	r := mux.NewRouter()
 	r.HandleFunc("/api/products", GetProductsHandler).Methods("GET")
 	r.HandleFunc("/api/products/{id}", GetProductHandler).Methods("GET")
